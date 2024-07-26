@@ -1,2 +1,1 @@
-"# Photography-website" 
-"# Photography-website" 
+A sample Photography website
