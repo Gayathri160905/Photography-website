@@ -1,0 +1,84 @@
+{% extends 'home.html' %}
+
+{% block title %}Stills{% endblock %}
+
+{%block content%}
+<style>
+    .portraits{
+        margin-top: 70px;
+    }
+    .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-left: 50px;
+        }
+
+        .image-item {
+            cursor: pointer;
+            transition: transform 0.2s;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .image-item:hover {
+            transform: scale(1.2);
+        }
+</style>
+<div class="portraits container">
+      <h1>Portraits</h1>
+          <hr style="width: 10%; border: 2.5px solid black; border-radius: 7px;">
+          <div> <br> <br>
+            <div class="image-gallery container">
+                <div class="image-item">
+                    <img src="../static/child-817373_640.jpg" alt="Image 1">
+                </div>
+                <div class="image-item">
+                    <img src="../static/christmas-2971961_640.jpg" alt="Image 2">
+                </div>
+                <div class="image-item">
+                    <img src="../static/fashion-2309519_640.jpg" alt="Image 3">
+                </div>
+                <div class="image-item">
+                    <img src="../static/puppy-2785074_640.jpg" alt="Image 3">
+                </div>
+                <div class="image-item">
+                    <img src="../static/maine-coon-694730_640.jpg" alt="Image 3">
+                </div>
+                <div class="image-item">
+                    <img src="../static/woman-3551832_640.jpg" alt="Image 3">
+                </div>
+                <!-- Add more image items here -->
+            </div>
+          </div>
+  </div> <br> <br>
+  <div class="bridges container">
+    <h1>Bridges onThames</h1>
+          <hr style="width: 10%; border: 2.5px solid black; border-radius: 7px;"> <br> <br>
+          <div class="image-gallery container" >
+            <div class="image-item">
+                <img src="../static/tower-bridge-441853_640.jpg" alt="Image 1">
+            </div>
+            <div class="image-item">
+                <img src="../static/big-ben-2393098_640.jpg" alt="Image 2">
+            </div>
+            <div class="image-item">
+                <img src="../static/london-4612015_640.jpg" alt="Image 3">
+            </div>
+            <div class="image-item">
+                <img src="../static/tower-bridge-980961_640.jpg" alt="Image 3">
+            </div>
+            <div class="image-item">
+                <img src="../static/westminster-1176318_640.jpg" alt="Image 3">
+            </div>
+            <div class="image-item">
+                <img src="../static/london-1942867_640.jpg" alt="Image 3">
+            </div>
+            <!-- Add more image items here -->
+        </div> <br> <br>
+  </div>
+{%endblock%}
